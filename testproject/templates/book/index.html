@@ -1,0 +1,7 @@
+{% extends "layouts/base.html"%} {% block content %}
+<ul>
+  {% for b in books %}
+  <li>{{ b.id }} {{ b.name }}</li>
+  {% endfor %}
+</ul>
+{% endblock %} {% block title %}Index Page{% endblock %}
